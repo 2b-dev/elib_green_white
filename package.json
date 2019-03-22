@@ -1,0 +1,19 @@
+{
+  "name": "elib_green_white",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2b-dev/elib_green_white.git"
+  },
+  "author": "Nu Chaimongkon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2b-dev/elib_green_white/issues"
+  },
+  "homepage": "https://github.com/2b-dev/elib_green_white#readme"
+}
