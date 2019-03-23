@@ -140,82 +140,123 @@
       <section class="bg-e1e1e1">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <div
-                id="carousel-example-1z"
-                class="carousel slide carousel-fade"
-                data-ride="carousel"
-              >
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carousel-example-1z"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                  <!--First slide-->
-                  <div class="carousel-item active">
-                    <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-                      alt="First slide"
-                    />
+            <div class="col-12 bg-ececec">
+              <div class="w-100 py-3">
+                <div
+                  id="carousel-1"
+                  class="carousel slide carousel-fade"
+                  data-ride="carousel"
+                >
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                      <a href="#">
+                        <img
+                          class="d-block w-100"
+                          src="./images/carousel-1.png"
+                          alt="carousel-1"
+                        />
+                      </a>
+                    </div>
+                    <!--/First slide-->
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                      <a href="#">
+                        <img
+                          class="d-block w-100"
+                          src="./images/carousel-1.png"
+                          alt="carousel-1"
+                        />
+                      </a>
+                    </div>
+                    <!--/Second slide-->
+                    <!--Third slide-->
+                    <div class="carousel-item">
+                      <a href="#">
+                        <img
+                          class="d-block w-100"
+                          src="./images/carousel-1.png"
+                          alt="carousel-1"
+                        />
+                      </a>
+                    </div>
+                    <!--/Third slide-->
                   </div>
-                  <!--/First slide-->
-                  <!--Second slide-->
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-                      alt="Second slide"
-                    />
-                  </div>
-                  <!--/Second slide-->
-                  <!--Third slide-->
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-                      alt="Third slide"
-                    />
-                  </div>
-                  <!--/Third slide-->
+                  <!--/.Slides-->
+                  <!--Controls-->
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-1"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-1"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <!--/.Controls-->
                 </div>
-                <!--/.Slides-->
-                <!--Controls-->
-                <a
-                  class="carousel-control-prev"
-                  href="#carousel-example-1z"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carousel-example-1z"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
-                <!--/.Controls-->
               </div>
             </div>
+            <div class="col-12 col-md-8 col-lg-8 col-md- bg-ececec">
+              <div class="block-search">
+                <div class="row mx-0">
+                  <div class="col-12 text-center pt-3">
+                    <h5 class="title-search">
+                      <span class="c-f05a23 kn">ค้นหา</span>รายการหนังสือ
+                    </h5>
+                    <p class="text-center title-search-eng">
+                      Search for book lists
+                    </p>
+                  </div>
+                  <div class="col-12 px-5 pb-3">
+                    <input
+                      class="form-control form-control-lg input-search"
+                      placeholder="ค้นหาหนังสือ"
+                    />
+                  </div>
+                  <div class="col-12 bg-footer-search px-5 pb-3 pt-3">
+                    <div class="div-footer-search text-right">
+                      <select
+                        class="browser-default custom-select sl-search-type"
+                      >
+                        <option selected>ประเภท</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <select
+                        class="browser-default custom-select sl-search-fac"
+                      >
+                        <option selected>สำนักพิมพ์</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <button class="btn btn-search">Search</button>
+                      <p class="mb-0 mt-1 text-left"><a href="" class="link-search">Advanced Search</a> | <a href="" class="link-search">Browse Search</p>
+                    </div>
+                    <img src="./images/book-search.png" class="book-search">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-md- bg-ececec"></div>
           </div>
         </div>
       </section>
