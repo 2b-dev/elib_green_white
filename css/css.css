@@ -131,7 +131,7 @@
   font-weight: 600;
   font-size: 18px;
 }
-#carousel-1 .carousel-control-next {
+#carousel-1 .carousel-control-next , #carousel-2 .carousel-control-next{
   top: auto;
   width: 30px;
   height: 30px;
@@ -139,7 +139,7 @@
   background-color: #127740;
   opacity: 1;
 }
-#carousel-1 .carousel-control-prev {
+#carousel-1 .carousel-control-prev, #carousel-2 .carousel-control-prev {
   top: auto;
   width: 30px;
   height: 30px;
@@ -252,4 +252,15 @@
 .link-search, .link-search:hover{
   color: #000000;
   font-weight: 400;
+}
+.h-100{
+  height: 100%;
+  max-height: 100%;
+}
+.hr-elib{
+  background-image: url("../images/hr-elib.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 1.5rem;
 }
