@@ -93,6 +93,9 @@ footer {
 .bg-head-index {
   background-image: url("../images/header_index.png");
 }
+.bg-head-lend {
+  background-image: url("../images/header_lend.png");
+}
 .img-logo {
   width: 420px;
   margin-top: 2rem;
@@ -377,4 +380,30 @@ footer {
   background-image: url("../images/footer_div.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.sizefont{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #000000;
+}
+.normal-size, .color-eye{
+  font-size: 16px;
+  color: #000000;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.middle-size{
+  font-size: 20px;
+  color: #000000;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 400;
+}
+.large-size{
+  font-size: 24px;
+  color: #000000;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 700;
 }
