@@ -1,5 +1,5 @@
 * {
-  font-family: "Sarabun", sans-serif;
+  font-family: "Athiti","Sarabun", sans-serif;
 }
 .srb {
   font-family: "Sarabun", sans-serif;
@@ -167,7 +167,7 @@ footer {
   background-size: 100% auto;
 }
 .title-search {
-  font-family: "Kanit";
+  font-family: "Athiti";
   font-size: 24px;
   font-weight: 500;
   border-bottom: 2px solid #000000;
@@ -175,7 +175,7 @@ footer {
   margin: 0 auto;
 }
 .title-search-eng {
-  font-family: "Kanit";
+  font-family: "Athiti";
   font-size: 16px;
   font-weight: 400;
   color: #127740;
@@ -315,7 +315,7 @@ footer {
 }
 .title-card {
   color: #f05a23;
-  font-family: "Kanit";
+  font-family: "Athiti";
   margin-bottom: 1rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
