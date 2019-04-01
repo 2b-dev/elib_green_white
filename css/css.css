@@ -1,5 +1,5 @@
 * {
-  font-family: "Athiti","Sarabun", sans-serif;
+  font-family: "Athiti", "Sarabun", sans-serif;
   font-weight: 500;
 }
 .srb {
@@ -52,7 +52,11 @@ footer {
 }
 .icon-home-nav {
   width: 100%;
-  width: 30px;
+  max-width: 30px;
+}
+.icon-eppo-nav {
+  width: 100%;
+  max-width: 18px;
 }
 .ul-nav .list-nav .a-list-nav {
   padding-left: 0.5rem;
@@ -97,21 +101,35 @@ footer {
 .bg-head-lend {
   background-image: url("../images/header_lend.png");
 }
-.img-logo {
-  width: 420px;
-  margin-top: 2rem;
-}
 .main-nav {
   list-style: none;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+  background-image: url("../images/bg-nav.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  padding-top: .8rem;
+  height: 100%;
 }
 .main-nav .list-main-nav {
   max-width: 14.28%;
   width: 100%;
+  height: 100%;
   text-align: center;
+  position: relative;
+}
+.list-main-nav::after{
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 20%;
+  bottom: 45%;
+  height: 25%;
+  width: 2px;
+  background-color: #419752;
 }
 .main-nav .list-main-nav .list-link-main-nav {
   color: #000000;
@@ -121,43 +139,57 @@ footer {
 .main-nav .list-main-nav .list-link-main-nav .img-main-nav {
   width: 100%;
   height: 100%;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80px;
+  max-height: 80px;
   margin-bottom: 0.25rem;
   border-radius: 50%;
+  background-image: url("../images/bg-li.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .main-nav .list-main-nav .list-link-main-nav p {
   margin-bottom: 0;
 }
 .main-nav .list-main-nav .list-link-main-nav:hover .img-main-nav {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 100px 10px rgba(109, 200, 152, 1);
+  background-image: url("../images/bg-li-ac-ho.png");
+  max-width: 90px;
+  max-height: 90px;
+  /*-webkit-box-shadow: 0px 0px 100px 10px rgba(109, 200, 152, 1);
   -moz-box-shadow: 0px 0px 100px 10px rgba(109, 200, 152, 1);
-  box-shadow: 0px 0px 100px 10px rgba(109, 200, 152, 1);
+  box-shadow: 0px 0px 100px 10px rgba(109, 200, 152, 1);*/
 }
 .main-nav .list-main-nav .list-link-main-nav:hover p {
-  color: #127740;
+  color: #f05a23;
   font-weight: 600;
   font-size: 18px;
 }
 #carousel-1 .carousel-control-next,
 #carousel-2 .carousel-control-next {
   top: auto;
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   right: 0;
   background-color: #127740;
   opacity: 1;
+  z-index: 102;
 }
 #carousel-1 .carousel-control-prev,
 #carousel-2 .carousel-control-prev {
   top: auto;
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   background-color: #fe6e2f;
-  right: 30px;
+  right: 38px;
   left: auto;
   opacity: 1;
+  z-index: 102;
+}
+.bottom-new-release{
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
 }
 .block-search {
   border-width: 3px;
@@ -357,10 +389,10 @@ footer {
   font-size: 14px;
   color: #000000;
 }
-.text-address{
+.text-address {
   font-size: 0.8rem;
 }
-.circle-link{
+.circle-link {
   width: 40px;
   border: 1px solid #ffffff;
   border-radius: 50%;
@@ -369,10 +401,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footer-div::before{
+.footer-div::before {
   content: "";
   position: absolute;
-  width: 100%;  
+  width: 100%;
   height: 30px;
   margin-left: -15px;
   margin-top: -1rem;
@@ -382,29 +414,61 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.sizefont{
+.sizefont {
   position: absolute;
   top: 0;
   right: 0;
+  background-image: url("../images/bg-size-font.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-left: 2.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.8rem;
+}
+.after-sizefont {
   border-bottom: 1px solid #000000;
 }
-.normal-size, .color-eye{
+.sizefont .after-sizefont a span {
+  line-height: 24px;
+}
+.normal-size,
+.color-eye {
   font-size: 16px;
   color: #000000;
   margin-left: 5px;
   margin-right: 5px;
 }
-.middle-size{
+.middle-size {
   font-size: 20px;
   color: #000000;
   margin-left: 5px;
   margin-right: 5px;
   font-size: 400;
 }
-.large-size{
+.large-size {
   font-size: 24px;
   color: #000000;
   margin-left: 5px;
   margin-right: 5px;
   font-size: 700;
+}
+.div-contain-logo {
+  width: 30%;
+  position: relative;
+}
+.img-logo {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.div-contain-logo-link{
+  position: absolute;
+  right: 1.2rem;
+  top: 3.2rem;
+}
+.click-link-img{
+  height: 15px;
+  width: auto;
+  border-radius: 8px;
 }
