@@ -35,7 +35,10 @@
       href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700"
+      rel="stylesheet"
+    />
     <link href="./css/css.css" rel="stylesheet" />
   </head>
   <body>
@@ -50,9 +53,26 @@
           <div class="col-6 col-md-5 col-lg-4 col-xl-3 side_left_nav">
             <ul class="ul-nav justify-content-md-end">
               <li class="list-nav">
-                <a class="a-list-nav-home" href="index.html"
-                  ><img src="./images/icon_home_nav.png" class="icon-home-nav"
+                <a
+                  class="a-list-nav-home"
+                  href="http://www.eppo.go.th/"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="หน้าหลัก สนพ."
+                  ><img src="./images/icon_eppo_nav.png" class="icon-eppo-nav"
                 /></a>
+              </li>
+              <li class="list-nav">
+                <a
+                  class="a-list-nav-home"
+                  href="index.html"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="หน้าหลัก Digital library"
+                >
+                  <img src="./images/icon_home_nav.png" class="icon-home-nav" />
+                </a>
               </li>
               <li class="list-nav">
                 <a class="a-list-nav active">TH</a>
@@ -81,11 +101,48 @@
         </div>
       </div>
       <div class="container">
-        <div class="row bg-head bg-head-lend position-relative">
+        <div class="row bg-head bg-head-index position-relative">
           <div class="col-12">
-            <a href="index.html">
-              <img src="./images/img-logo.png" class="img-logo" />
-            </a>
+            <div class="div-contain-logo">
+              <a href="index.html">
+                <img src="./images/new-img-logo.png" class="img-logo" />
+              </a>
+              <div class="div-contain-logo-link">
+                <a href="#!">
+                  <img
+                    src="./images/click-link.png"
+                    class="click-link-img hoverable"
+                  />
+                </a>
+              </div>
+              <div class="div-contain-logo-eppo">
+                <a
+                  href="http://www.eppo.go.th/"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="หน้าหลัก สนพ."
+                >
+                  <img
+                    src="./images/new-img-logo-only-left.png"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="div-contain-logo-digital">
+                <a
+                  href="#!"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="หน้าหลัก Digital library"
+                >
+                  <img
+                    src="./images/new-img-logo-only-right.png"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
           <div class="col-12">
             <ul class="main-nav">
@@ -137,19 +194,21 @@
             </ul>
           </div>
           <div class="sizefont">
-            <a href="">
-              <span class="normal-size">ก</span>
-            </a>
-            <a href="">
-              <span class="middle-size">ก</span>
-            </a>
-            <a href="">
-              <span class="large-size">ก</span>
-            </a>
-            <span class="">/</span>
-            <a href="">
-              <span class="color-eye">ตาบอดสี</span>
-            </a>
+            <div class="after-sizefont">
+              <a href="">
+                <span class="normal-size">ก</span>
+              </a>
+              <a href="">
+                <span class="middle-size">ก</span>
+              </a>
+              <a href="">
+                <span class="large-size">ก</span>
+              </a>
+              <span class="">/</span>
+              <a href="">
+                <span class="color-eye">ตาบอดสี</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -218,12 +277,18 @@
             <img src="./images/text-logo-bot.png" class="img-fluid w-100" />
           </div>
           <div class="col-12 col-md-5 my-3">
-            <p class="mb-0 white-text">สำนักงานนโยบายพลังงาน (สนพ.) กระทรวงพลังงาน</p>
+            <p class="mb-0 white-text">
+              สำนักงานนโยบายพลังงาน (สนพ.) กระทรวงพลังงาน
+            </p>
             <p class="mb-0 white-text text-address">
               121/1-2 ถนนเพชรบุรี แขวงทุ่งพญาไท เขตราชเทวี กรุงเทพฯ 10400
             </p>
-            <p class="mb-0 white-text text-address">โทร (+66)0 2612 1555, โทรสาร (+66)0 2612 1364</p>
-            <p class="mb-0 white-text text-address">Email webmaster@eppo.go.th   Official Website : www.eppo.go.th</p>
+            <p class="mb-0 white-text text-address">
+              โทร (+66)0 2612 1555, โทรสาร (+66)0 2612 1364
+            </p>
+            <p class="mb-0 white-text text-address">
+              Email webmaster@eppo.go.th Official Website : www.eppo.go.th
+            </p>
           </div>
           <div class="col-12 col-md-4 my-3 text-right">
             <h4>
@@ -280,5 +345,8 @@
   ></script>
   <script>
     new WOW().init();
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
   </script>
 </html>

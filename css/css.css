@@ -105,13 +105,14 @@ footer {
   list-style: none;
   display: flex;
   width: 100%;
+  padding-left: 0;
   flex-direction: row;
   justify-content: space-around;
   background-image: url("../images/bg-nav.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
-  padding-top: .8rem;
+  padding-top: 0.8rem;
   height: 100%;
 }
 .main-nav .list-main-nav {
@@ -121,7 +122,7 @@ footer {
   text-align: center;
   position: relative;
 }
-.list-main-nav::after{
+.list-main-nav::after {
   content: "";
   position: absolute;
   left: 100%;
@@ -130,6 +131,9 @@ footer {
   height: 25%;
   width: 2px;
   background-color: #419752;
+}
+.list-main-nav:last-of-type::after {
+  background-color: transparent;
 }
 .main-nav .list-main-nav .list-link-main-nav {
   color: #000000;
@@ -186,7 +190,7 @@ footer {
   opacity: 1;
   z-index: 102;
 }
-.bottom-new-release{
+.bottom-new-release {
   position: absolute;
   bottom: 0;
   z-index: 100;
@@ -310,13 +314,13 @@ footer {
 }
 .body-card-bg {
   background-color: transparent;
-  background-image: url("../images/body_card_bg.png");
+  /*background-image: url("../images/body_card_bg_new.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   padding-left: 0;
   padding-right: 0;
 }
@@ -327,11 +331,27 @@ footer {
   background-size: 100% 100%;
   width: 100%;
   padding-top: 3rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   margin-top: -10.5rem;
   min-height: 21rem;
+}
+.body-card-bg2 p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.link-card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+.card-none-border {
+  border-radius: 0;
+  border: none !important;
 }
 .btn-card {
   background-color: #127740;
@@ -346,15 +366,24 @@ footer {
   margin-left: -0.5rem;
   margin-right: 0.5rem;
 }
+
 .title-card {
-  color: #f05a23;
+  color: #ffffff;
   font-family: "Athiti";
   margin-bottom: 1rem;
-  padding-top: 0.3rem;
+  padding-top: 0rem;
   padding-bottom: 0.3rem;
-  background-image: url("../images/bg_card_title.png");
+  text-align: left;
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+  /*background-image: url("../images/bg_card_title.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
+}
+.link-card-body:hover .title-card {
+  color: #f05a23;
+  font-weight: 500;
 }
 .title-card2 {
   color: #f05a23;
@@ -370,13 +399,21 @@ footer {
 }
 .div-exhibition-left {
   padding-left: 1.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-image: url("../images/div-exhibition-left.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 .div-exhibition-right {
   padding-right: 1.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-image: url("../images/div-exhibition-right.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 .text-exhibition {
   font-size: 18px;
@@ -462,13 +499,28 @@ footer {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.div-contain-logo-link{
+.div-contain-logo-link {
   position: absolute;
   right: 1.2rem;
   top: 3.2rem;
 }
-.click-link-img{
+.click-link-img {
   height: 15px;
   width: auto;
   border-radius: 8px;
+}
+.div-contain-logo-eppo {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 75.1px;
+}
+.div-contain-logo-digital {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  height: 75.1px;
+}
+.div-contain-logo-eppo img, .div-contain-logo-digital img{
+  height: 75.1px;
 }
