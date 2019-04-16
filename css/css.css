@@ -514,12 +514,24 @@ footer {
   bottom: 1rem;
   left: 0;
   height: 75.1px;
+  background-image: url('../images/new-img-logo-only-left-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.div-contain-logo-eppo:hover{
+  background-image: url('../images/new-img-logo-only-left-bg-hover.png');
 }
 .div-contain-logo-digital {
   position: absolute;
   bottom: 1rem;
   right: 0;
   height: 75.1px;
+  background-image: url('../images/new-img-logo-only-right-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.div-contain-logo-digital:hover{
+  background-image: url('../images/new-img-logo-only-right-bg-hover.png');
 }
 .div-contain-logo-eppo img, .div-contain-logo-digital img{
   height: 75.1px;
