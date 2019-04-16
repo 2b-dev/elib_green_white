@@ -1,0 +1,43 @@
+.normal {
+  -webkit-filter: none;
+  filter: none;
+}
+.protanopia {
+  -webkit-filter: url("../images/filter-color/filter.svg#protanopia");
+  filter: url("../images/filter-color/filters.svg#protanopia");
+}
+
+.protanomaly {
+  -webkit-filter: url("../images/filter-color/filters.svg#protanomaly");
+  filter: url("../images/filter-color/filters.svg#protanomaly");
+}
+
+.deuteranopia {
+  -webkit-filter: url("../images/filter-color/filters.svg#deuteranopia");
+  filter: url("../images/filter-color/filters.svg#deuteranopia");
+}
+
+.deuteranomaly {
+  -webkit-filter: url("../images/filter-color/filters.svg#deuteranomaly");
+  filter: url("../images/filter-color/filters.svg#deuteranomaly");
+}
+
+.tritanopia {
+  -webkit-filter: url("../images/filter-color/filters.svg#tritanopia");
+  filter: url("../images/filter-color/filters.svg#tritanopia");
+}
+
+.tritanomaly {
+  -webkit-filter: url("../images/filter-color/filters.svg#tritanomaly");
+  filter: url("../images/filter-color/filters.svg#tritanomaly");
+}
+
+.achromatopsia {
+  -webkit-filter: url("../images/filter-color/filters.svg#achromatopsia");
+  filter: url("../images/filter-color/filters.svg#achromatopsia");
+}
+
+.achromatomaly {
+  -webkit-filter: url("../images/filter-color/filters.svg#achromatomaly");
+  filter: url("../images/filter-color/filters.svg#achromatomaly");
+}
