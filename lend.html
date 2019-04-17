@@ -1,352 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Elib</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700"
-      rel="stylesheet"
-    />
-    <link href="./css/css.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 div-before-lang bg-127740"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Elib</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet" />
+  <link id="font-id" href="./css/font.css" rel="stylesheet" />
+  <link href="./css/css.css" rel="stylesheet" />
+  <link href="./css/filter.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 div-before-lang bg-127740">
+          <button class="navbar-toggler d-md-none toggler-example" type="button" data-toggle="collapse"
+            data-target="#navMenuMobile" aria-controls="navMenuMobile" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="dark-blue-text">
+              <i class="fas fa-bars white-text fa-1x"></i>
+            </span>
+          </button>
         </div>
       </div>
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-6 col-md-5 col-lg-4 col-xl-3 side_left_nav">
-            <ul class="ul-nav justify-content-md-end">
-              <li class="list-nav">
-                <a
-                  class="a-list-nav-home"
-                  href="http://www.eppo.go.th/"
-                  target="_blank"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  title="หน้าหลัก สนพ."
-                  ><img src="./images/icon_eppo_nav.png" class="icon-eppo-nav"
-                /></a>
-              </li>
-              <li class="list-nav">
-                <a
-                  class="a-list-nav-home"
-                  href="index.html"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  title="หน้าหลัก Digital library"
-                >
-                  <img src="./images/icon_home_nav.png" class="icon-home-nav" />
-                </a>
-              </li>
-              <li class="list-nav">
-                <a class="a-list-nav active">TH</a>
-              </li>
-              <li class="list-nav">
-                <a class="a-list-nav">EN</a>
-              </li>
-              <li class="list-nav">
-                <a class="a-list-nav">SITEMAP</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-5 col-lg-4 col-xl-3 side_right_nav">
-            <ul class="ul-nav justify-content-center">
-              <li class="list-nav">
-                <a class="a-list-login">เข้าสู่ระบบ</a>
-              </li>
-              <li class="list-nav">
-                <a class="a-list-login">/</a>
-              </li>
-              <li class="list-nav">
-                <a class="a-list-login">สมัครสมาชิก</a>
-              </li>
-            </ul>
-          </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-5 col-md-5 col-lg-4 col-xl-3 side_left_nav">
+          <ul class="ul-nav justify-content-end">
+            <li class="list-nav d-none d-md-block">
+              <a class="a-list-nav-home" href="http://www.eppo.go.th/" target="_blank" data-toggle="tooltip"
+                data-placement="bottom" title="หน้าหลัก สนพ."><img src="./images/icon_eppo_nav.png"
+                  class="icon-eppo-nav" /></a>
+            </li>
+            <li class="list-nav">
+              <a class="a-list-nav-home" href="index.html" data-toggle="tooltip" data-placement="bottom"
+                title="หน้าหลัก Digital library">
+                <img src="./images/icon_home_nav.png" class="icon-home-nav" />
+              </a>
+            </li>
+            <li class="list-nav">
+              <a class="a-list-nav active">TH</a>
+            </li>
+            <li class="list-nav">
+              <a class="a-list-nav">EN</a>
+            </li>
+            <li class="list-nav d-none d-md-block">
+              <a class="a-list-nav">SITEMAP</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-7 col-md-5 col-lg-4 col-xl-3 side_right_nav">
+          <ul class="ul-nav justify-content-center">
+            <li class="list-nav">
+              <a class="a-list-login">เข้าสู่ระบบ</a>
+            </li>
+            <li class="list-nav">
+              <a class="a-list-login">/</a>
+            </li>
+            <li class="list-nav">
+              <a class="a-list-login">สมัครสมาชิก</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="container">
-        <div class="row bg-head bg-head-index position-relative">
-          <div class="col-12">
-            <div class="div-contain-logo">
-              <a href="index.html">
-                <img src="./images/new-img-logo.png" class="img-logo" />
-              </a>
-              <div class="div-contain-logo-link">
-                <a href="#!">
-                  <img
-                    src="./images/click-link.png"
-                    class="click-link-img hoverable"
-                  />
-                </a>
-              </div>
-              <div class="div-contain-logo-eppo">
-                <a
-                  href="http://www.eppo.go.th/"
-                  target="_blank"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  title="หน้าหลัก สนพ."
-                >
-                  <img
-                    src="./images/new-img-logo-only-left.png"
-                    class="img-fluid"
-                  />
-                </a>
-              </div>
-              <div class="div-contain-logo-digital">
-                <a
-                  href="#!"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  title="หน้าหลัก Digital library"
-                >
-                  <img
-                    src="./images/new-img-logo-only-right.png"
-                    class="img-fluid"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <ul class="main-nav">
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="book.html">
-                  <img src="./images/li-book.png" class="img-main-nav" />
-                  <p>หนังสือ</p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="magazine.html">
-                  <img src="./images/li-magazine.png" class="img-main-nav" />
-                  <p>แมกกาซีน</p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="#">
-                  <img src="./images/li-multimedia.png" class="img-main-nav" />
-                  <p>มัลติมีเดีย</p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="lend.html">
-                  <img src="./images/li-lend.png" class="img-main-nav" />
-                  <p>ยืม-คืน</p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="#">
-                  <img src="./images/li-centre.png" class="img-main-nav" />
-                  <p>
-                    ศูนย์ประสาน<br />
-                    ราชการใสสะอาด
-                  </p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="#">
-                  <img src="./images/li-news.png" class="img-main-nav" />
-                  <p>ศูนย์ข้อมูลข่าวสาร</p>
-                </a>
-              </li>
-              <li class="list-main-nav">
-                <a class="list-link-main-nav" href="#">
-                  <img src="./images/li-contact.png" class="img-main-nav" />
-                  <p>ติดต่อเรา</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="sizefont">
-            <div class="after-sizefont">
-              <a href="">
-                <span class="normal-size">ก</span>
-              </a>
-              <a href="">
-                <span class="middle-size">ก</span>
-              </a>
-              <a href="">
-                <span class="large-size">ก</span>
-              </a>
-              <span class="">/</span>
-              <a href="">
-                <span class="color-eye">ตาบอดสี</span>
-              </a>
-            </div>
-          </div>
+    </div>
+    <div class="collapse navbar-collapse py-3" id="navMenuMobile">
+      <div class="row justify-content-center">
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/book.png" class="menu-mobile">
+            <p class="black-text">หนังสือ</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/magazine.png" class="menu-mobile">
+            <p class="black-text">แมกกาซีน</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/multimedia.png" class="menu-mobile">
+            <p class="black-text">มัลติมีเดีย</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/lend.png" class="menu-mobile">
+            <p class="black-text">ยืม-คืน</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/centre.png" class="menu-mobile">
+            <p class="black-text">ศูนย์ประสาน<br>ราชการใสสะอาด</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/centre-news.png" class="menu-mobile">
+            <p class="black-text">ศูนย์ข้อมูลข่าวสาร</p>
+          </a>
+        </div>
+        <div class="col-4 col-md-3 mb-2 text-center">
+          <a href="#!">
+            <img src="./images/main-menu/contact.png" class="menu-mobile">
+            <p class="black-text">ติดต่อเรา</p>
+          </a>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="bg-e1e1e1 pb-5">
-        <div class="container bg-ececec">
-          <div class="row hr-elib bg-ececec">
-            <div class="col-12 mb-3">
-              <img
-                src="./images/mock/breadcrumb-lend.png"
-                class="w-100 img-fluid"
-              />
+    </div>
+    <div class="container">
+      <div class="row bg-head bg-head-index position-relative">
+        <div class="col-12">
+          <div class="div-contain-logo wow fadeInLeft">
+            <a href="index.html">
+              <img src="./images/new-img-logo.png" class="img-logo" />
+            </a>
+            <div class="div-contain-logo-link">
+              <a href="#!">
+                <img src="./images/click-link.png" class="click-link-img hoverable" />
+              </a>
             </div>
-            <div class="col-12 mb-3">
-              <img
-                src="./images/mock/search-lend.png"
-                class="img-fluid w-100"
-              />
+            <div class="div-contain-logo-eppo">
+              <a href="http://www.eppo.go.th/" target="_blank" data-toggle="tooltip" data-placement="bottom"
+                title="หน้าหลัก สนพ.">
+                <img src="./images/new-img-logo-only-left.png" class="img-fluid" />
+              </a>
             </div>
-            <div class="col-12 mb-3">
-              <img src="./images/mock/text-lend.png" class="img-fluid w-100" />
-            </div>
-            <div class="col-12 col-md-3 col-lg-3">
-              <img src="./images/mock/side-lend.png" class="img-fluid w-100" />
-            </div>
-            <div class="col-12 col-md-9 col-lg-9">
-              <div class="row">
-                <div class="col-12 col-md-12 col-lg-6">
-                  <a data-fancybox="" href="./images/mock/lend_pop1.png">
-                    <img
-                      src="./images/mock/lend_pop1.png"
-                      class="img-fluid w-100"
-                    />
-                  </a>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6">
-                  <a data-fancybox="" href="./images/mock/lend_pop2.png">
-                    <img
-                      src="./images/mock/lend_pop2.png"
-                      class="img-fluid w-100"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row hr-elib bg-ececec mt-3">
-            <div class="col-12 col-md-3 col-lg-3">
-              <img
-                src="./images/mock/side-lend-bottom.png"
-                class="img-fluid w-100"
-              />
-            </div>
-            <div class="col-12 col-md-9 col-lg-9">
-              <img src="./images/mock/book-lend.png" class="img-fluid w-100" />
+            <div class="div-contain-logo-digital">
+              <a href="#!" data-toggle="tooltip" data-placement="bottom" title="หน้าหลัก Digital library">
+                <img src="./images/new-img-logo-only-right.png" class="img-fluid" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-3 my-3 pr-3 border-right footer-div">
-            <img src="./images/text-logo-bot.png" class="img-fluid w-100" />
-          </div>
-          <div class="col-12 col-md-5 my-3">
-            <p class="mb-0 white-text">
-              สำนักงานนโยบายและแผนพลังงาน
-            </p>
-            <p class="mb-0 white-text text-address">
-              121/1-2 ถนนเพชรบุรี แขวงทุ่งพญาไท เขตราชเทวี กรุงเทพฯ 10400
-            </p>
-            <p class="mb-0 white-text text-address">
-              โทร (+66)0 2612 1555, โทรสาร (+66)0 2612 1364
-            </p>
-            <p class="mb-0 white-text text-address">
-              Email webmaster@eppo.go.th Official Website : www.eppo.go.th
-            </p>
-          </div>
-          <div class="col-12 col-md-4 my-3 text-right">
-            <h4>
-              <span class="white-text">www.eppo.go.th</span>
-              <a href="">
-                <span class="white-text circle-link">
-                  <i class="fab fa-facebook-f"></i>
-                </span>
+        <div class="col-12 d-none d-lg-block">
+          <ul class="main-nav wow fadeInUp">
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="book.html">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav book-li" />
+                <p>หนังสือ</p>
               </a>
-              <a href="">
-                <span class="white-text circle-link">
-                  <i class="fab fa-youtube"></i>
-                </span>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="magazine.html">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav magazine-li" />
+                <p>แมกกาซีน</p>
               </a>
-            </h4>
-            <h5 class="white-text">
-              <a href="" class="white-text">
-                <i class="far fa-newspaper mr-2"></i>
-                <span class="border-bottom">แบบสอบถามความพึงพอใจ</span>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="#">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav multimedia-li" />
+                <p>มัลติมีเดีย</p>
               </a>
-            </h5>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="lend.html">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav lend-li" />
+                <p>ยืม-คืน</p>
+              </a>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="#">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav centre-li" />
+                <p>
+                  ศูนย์ประสาน<br />
+                  ราชการใสสะอาด
+                </p>
+              </a>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="#">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav centre-news-li" />
+                <p>ศูนย์ข้อมูลข่าวสาร</p>
+              </a>
+            </li>
+            <li class="list-main-nav">
+              <a class="list-link-main-nav" href="#">
+                <img src="./images/main-menu/siez_menu.png" class="img-main-nav contact-li" />
+                <p>ติดต่อเรา</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sizefont">
+          <div class="after-sizefont">
+            <a href="">
+              <span class="normal-size">ก</span>
+            </a>
+            <a href="">
+              <span class="middle-size">ก</span>
+            </a>
+            <a href="">
+              <span class="large-size">ก</span>
+            </a>
+            <span class="">/</span>
+            <a href="" class="dropdown">
+              <a class="color-eye " id="color-filter" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">ตาบอดสี</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="color-filter">
+                <a class="dropdown-item" href="#" onclick="filterColor('normal');">Normal</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('protanopia');">Protanopia</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('protanomaly');">Protanomaly</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('deuteranopia');">Deuteranopia</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('deuteranomaly');">Deuteranomaly</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('tritanopia');">Tritanopia</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('tritanomaly');">Tritanomaly</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('achromatopsia');">Achromatopsia</a>
+                <a class="dropdown-item" href="#" onclick="filterColor('achromatomaly');">Achromatomaly</a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/sweetalert2@8"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"
-  ></script>
-  <script>
-    new WOW().init();
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
+    </div>
+
+  </header>
+  <main>
+    <section class="bg-e1e1e1 pb-5">
+      <div class="container bg-ececec">
+        <div class="row hr-elib bg-ececec">
+          <div class="col-12 mb-3">
+            <img src="./images/mock/breadcrumb-lend.png" class="w-100 img-fluid" />
+          </div>
+          <div class="col-12 mb-3">
+            <img src="./images/mock/search-lend.png" class="img-fluid w-100" />
+          </div>
+          <div class="col-12 mb-3">
+            <img src="./images/mock/text-lend.png" class="img-fluid w-100" />
+          </div>
+          <div class="col-12 col-md-3 col-lg-3">
+            <img src="./images/mock/side-lend.png" class="img-fluid w-100" />
+          </div>
+          <div class="col-12 col-md-9 col-lg-9">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6">
+                <a data-fancybox="" href="./images/mock/lend_pop1.png">
+                  <img src="./images/mock/lend_pop1.png" class="img-fluid w-100" />
+                </a>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <a data-fancybox="" href="./images/mock/lend_pop2.png">
+                  <img src="./images/mock/lend_pop2.png" class="img-fluid w-100" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row hr-elib bg-ececec mt-3">
+          <div class="col-12 col-md-3 col-lg-3">
+            <img src="./images/mock/side-lend-bottom.png" class="img-fluid w-100" />
+          </div>
+          <div class="col-12 col-md-9 col-lg-9">
+            <img src="./images/mock/book-lend.png" class="img-fluid w-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 my-3 pr-3 border-right footer-div">
+          <img src="./images/text-logo-bot.png" class="img-fluid w-100" />
+        </div>
+        <div class="col-12 col-md-5 my-3">
+          <p class="mb-0 white-text">
+            สำนักงานนโยบายและแผนพลังงาน
+          </p>
+          <p class="mb-0 white-text text-address">
+            121/1-2 ถนนเพชรบุรี แขวงทุ่งพญาไท เขตราชเทวี กรุงเทพฯ 10400
+          </p>
+          <p class="mb-0 white-text text-address">
+            โทร (+66)0 2612 1555, โทรสาร (+66)0 2612 1364
+          </p>
+          <p class="mb-0 white-text text-address">
+            Email webmaster@eppo.go.th Official Website : www.eppo.go.th
+          </p>
+        </div>
+        <div class="col-12 col-md-4 my-3 text-right">
+          <h4>
+            <span class="white-text">www.eppo.go.th</span>
+            <a href="">
+              <span class="white-text circle-link">
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </a>
+            <a href="">
+              <span class="white-text circle-link">
+                <i class="fab fa-youtube"></i>
+              </span>
+            </a>
+          </h4>
+          <h5 class="white-text">
+            <a href="" class="white-text">
+              <i class="far fa-newspaper mr-2"></i>
+              <span class="border-bottom">แบบสอบถามความพึงพอใจ</span>
+            </a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="./js/filter-color.js"></script>
+<script>
+  new WOW().init();
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
 </html>

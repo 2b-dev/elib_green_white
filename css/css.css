@@ -397,7 +397,6 @@ footer {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  min-height: 245px;
 }
 .footer-card-text-left {
   width: 60%;
@@ -513,7 +512,7 @@ footer {
 .title-card2 {
   color: #f05a23;
   font-family: "Sarabun";
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
 }
 .title-card2-sup {
   font-weight: 600 !important;
