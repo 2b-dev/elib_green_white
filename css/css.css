@@ -397,6 +397,7 @@ footer {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  min-height: 180px;
 }
 .footer-card-text-left {
   width: 60%;
