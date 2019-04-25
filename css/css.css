@@ -756,11 +756,38 @@ footer {
 @media (min-width: 576px) and (max-width: 767px) {
 }
 @media (max-width: 767px) {
+  .main-login{
+    padding-top: 100px;
+  }
+  footer.footer-login{ 
+    min-height: 25px!important;    
+    width: 100%;
+    background-color: #d8d7d7!important;
+  }
 }
 @media (min-width: 768px) {
   .div-contain-logo {
     width: 100%;
     max-width: 333px;
+  }
+  .main-login{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/bg-login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  footer.footer-login{
+    position: fixed!important;
+    bottom: 0!important;
+    min-height: 25px!important;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #d8d7d7!important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -779,32 +806,10 @@ footer {
     padding-top: 5px;
     min-height: 40px;
     text-align: right;
-  }
-  footer.footer-login{ 
-    min-height: 25px!important;    
-    width: 100%;
-    background-color: #d8d7d7!important;
-  }
+  }  
 }
 @media (min-width: 992px) {
-  .main-login{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url('../images/bg-login.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  footer.footer-login{
-    position: fixed!important;
-    bottom: 0!important;
-    min-height: 25px!important;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #d8d7d7!important;
-  }
+  
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 }
