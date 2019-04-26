@@ -410,11 +410,12 @@ footer {
   min-height: 180px;
 }
 .footer-card-text-left {
-  width: 60%;
+  width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: #404040;
   font-weight: 400;
+  height: 35px;
   color: #ffffff;
   background-image: url("../images/icon-feed.png");
   background-repeat: no-repeat;
