@@ -18,9 +18,10 @@
 .text-footer-banner-list {
   font-size: 18px;
 }
-
+.btn-search{
+  font-size: 22px;
+}
 .title-search,
-.btn-search,
 .text-application {
   font-size: 24px;
 }
