@@ -1,7 +1,9 @@
-.text-address {
+.text-address,
+.text-sub-footer-banner-list {
   font-size: 12px;
 }
-.see-all-logo {
+.see-all-logo,
+.text-footer-banner-list span {
   font-size: 14px;
 }
 .title-search-eng {
@@ -9,7 +11,10 @@
 }
 .text-exhibition,
 .main-nav .list-main-nav .list-link-main-nav,
-.title-card2-sup2,.footer-card-text-left ,.footer-card-btn-right {
+.title-card2-sup2,
+.footer-card-text-left,
+.footer-card-btn-right,
+.text-footer-banner-list {
   font-size: 18px;
 }
 

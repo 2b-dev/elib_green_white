@@ -789,6 +789,34 @@ footer {
   padding: 0;
   content: '';
 }
+.footer-banner-list{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.text-num-footer-banner-list{
+  position: absolute;
+  bottom: 1vh;
+  left: 2.3vh;
+  color: #009245;
+}
+.text-footer-banner-list{
+  position: absolute;
+  bottom: 0.05vh;
+  left: 8.5vh;
+  color: #ffffff;
+}
+.text-footer-banner-list span{
+  color: #bde328;
+}
+.text-sub-footer-banner-list{
+  position: absolute;
+  bottom: 0vh;
+  left: 8.5vh;
+  margin-bottom: 0.15rem;
+  color: #ffffff;
+}
 @media (max-width: 575px) {
   .div-contain-logo {
     width: 100%;
