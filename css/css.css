@@ -869,6 +869,21 @@ footer {
     max-width: 60px;
     width: 100%;
   }
+  .text-num-footer-banner-list{
+    bottom: 1.7vh;
+    left: 3vh;
+  }
+  .text-footer-banner-list{    
+    bottom: 0.07vh;
+    left: 12.5vh;
+  }
+  .text-footer-banner-list span{
+    color: #bde328;
+  }
+  .text-sub-footer-banner-list{    
+    bottom: 0vh;
+    left: 12.5vh;
+  }
 }
 @media (min-width: 576px) {
 }
@@ -883,6 +898,7 @@ footer {
     width: 100%;
     background-color: #d8d7d7!important;
   }
+
 }
 @media (min-width: 768px) {
   .div-contain-logo {
@@ -918,6 +934,21 @@ footer {
   }
   #carousel-2 .carousel-control-prev {
     right: 55px;
+  }
+  .text-num-footer-banner-list{
+    bottom: 4vh;
+    left: 4.5vh;
+  }
+  .text-footer-banner-list{    
+    bottom: 1.5vh;
+    left: 16.5vh;
+  }
+  .text-footer-banner-list span{
+    color: #bde328;
+  }
+  .text-sub-footer-banner-list{    
+    bottom: 0.8vh;
+    left: 16.5vh;
   }
 }
 @media (max-width: 991px) {

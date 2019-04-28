@@ -6,7 +6,8 @@
 .text-footer-banner-list span {
   font-size: 12px;
 }
-.title-search-eng {
+.title-search-eng,
+.text-num-footer-banner-list {
   font-size: 14px;
 }
 .text-exhibition,
@@ -22,4 +23,19 @@
 .btn-search,
 .text-application {
   font-size: 22px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-sub-footer-banner-list {
+    font-size: 16px;
+  }
+  .text-footer-banner-list span {
+    font-size: 18px;
+  }
+  .text-num-footer-banner-list {
+    font-size: 22px;
+  }
+  .text-footer-banner-list {
+    font-size: 26px;
+  }
 }
