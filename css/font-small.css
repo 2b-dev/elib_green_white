@@ -1,29 +1,38 @@
+.ul-nav .list-nav a{
+  font-size: 18px;
+}
+
 .text-address,
 .text-sub-footer-banner-list {
-  font-size: 10px;
+  font-size: 14px;
 }
 .see-all-logo,
 .text-footer-banner-list span {
-  font-size: 12px;
+  font-size: 16px;
 }
-.title-search-eng,
-.text-num-footer-banner-list {
+.title-search-eng{
   font-size: 14px;
 }
-.text-exhibition,
+
+.text-num-footer-banner-list, p {
+  font-size: 18px;
+}
+.text-exhibition{
+  font-size: 24px;
+}
 .main-nav .list-main-nav .list-link-main-nav,
 .title-card2-sup2,
 .footer-card-text-left,
 .footer-card-btn-right,
 .text-footer-banner-list {
-  font-size: 16px;
+  font-size: 20px;
 }
 .btn-search{
   font-size: 20px;
 }
 .title-search,
 .text-application {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

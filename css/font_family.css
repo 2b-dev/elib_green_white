@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "DBHelvethaicaX-55Regular";
+  src: url("../fonts/DBHelvethaicaX/DBHelvethaicaX.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/DBHelvethaicaX/DBHelvethaicaX.woff") format("woff"),
+    url("../fonts/DBHelvethaicaX/DBHelvethaicaX.ttf") format("truetype"),
+    url("../fonts/DBHelvethaicaX/DBHelvethaicaX.svg#DBHelvethaicaX-55Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "PSL-Chamnarn";
+  src: url("../fonts/PSL-Chamnarn/PSL-Chamnarn.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/PSL-Chamnarn/PSL-Chamnarn.woff") format("woff"),
+    url("../fonts/PSL-Chamnarn/PSL-Chamnarn.ttf") format("truetype"),
+    url("../fonts/PSL-Chamnarn/PSL-Chamnarn.svg#PSL-Chamnarn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
