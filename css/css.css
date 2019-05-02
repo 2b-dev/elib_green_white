@@ -843,7 +843,6 @@ footer {
 }
 .text-title-page{
   font-family: 'DBHelvethaicaX-55Regular', Tahoma, sans-serif;
-  font-size: 33px;
   line-height: 25px;
   font-weight: 500;
   width: 100%;
@@ -857,7 +856,6 @@ footer {
 }
 .text-subtitle-page{
   font-family: 'PSL-Chamnarn', Tahoma, sans-serif;
-  font-size: 18px;
   color: #127740;
 }
 @media (max-width: 575px) {

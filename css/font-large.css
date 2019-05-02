@@ -34,7 +34,12 @@
 .text-application {
   font-size: 30px;
 }
-
+.text-title-page{
+  font-size: 35px;
+}
+.text-subtitle-page{
+  font-size: 20px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .text-sub-footer-banner-list {
     font-size: 20px;
