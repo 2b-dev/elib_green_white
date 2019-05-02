@@ -835,6 +835,31 @@ footer {
   margin-bottom: 0;
   color: #ffffff;
 }
+/**/
+.div-title-page{
+  min-width: 100px;
+  max-width: 200px;  
+  text-align: center;
+}
+.text-title-page{
+  font-family: 'DBHelvethaicaX-55Regular', Tahoma, sans-serif;
+  font-size: 33px;
+  line-height: 25px;
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 1px solid #686868;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #f05a23;
+}
+.text-title-page span{
+  color: #000000;
+}
+.text-subtitle-page{
+  font-family: 'PSL-Chamnarn', Tahoma, sans-serif;
+  font-size: 18px;
+  color: #127740;
+}
 @media (max-width: 575px) {
   .div-contain-logo {
     width: 100%;
