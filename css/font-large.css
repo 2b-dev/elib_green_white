@@ -38,7 +38,10 @@
   font-size: 35px;
 }
 .text-subtitle-page{
-  font-size: 20px;
+  font-size: 22px;
+}
+.card-side-menu .card-header .btn, .ul-side-menu li a{
+  font-size: 22px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .text-sub-footer-banner-list {

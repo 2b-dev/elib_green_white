@@ -838,7 +838,7 @@ footer {
 /**/
 .div-title-page{
   min-width: 100px;
-  max-width: 200px;  
+  max-width: 230px;  
   text-align: center;
 }
 .text-title-page{
@@ -857,6 +857,95 @@ footer {
 .text-subtitle-page{
   font-family: 'PSL-Chamnarn', Tahoma, sans-serif;
   color: #127740;
+}
+.div-content{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.side-menu-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 230px;
+}
+.div-side-menu{
+  width: 230px;
+  min-height: 40vh;
+  background-color: transparent;
+  background-image: url('../images/bg-side-menu.png');
+  background-size: 100% 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+}
+.card-side-menu, .card-side-menu .card-header{
+  background-color: transparent;
+}
+.card-side-menu .card-header{
+  padding: 0;
+}
+.card-side-menu .card-header .btn {
+  text-align: left;
+  border-bottom: 1px solid #737373;
+  line-height: 18px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+}
+.card-side-menu .card-header .btn i{
+  margin-right: 1rem;
+  background-color: #009245;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #ffffff;
+}
+.card-side-menu .card-header h5:hover .btn i{
+  background-color: #009245;
+  color: #ffffff;
+}
+.card-side-menu .card-header h5:hover .btn{
+  text-decoration: none;
+}
+.card-side-menu .card-header .btn.collapsed i{
+  background-color: transparent;
+  color: #000000;
+}
+.card-side-menu .card-body{
+  padding: 0.5rem 0;
+
+}
+.ul-side-menu{
+  list-style: none;
+  padding: 0;
+  padding-left: 2rem;
+  margin-bottom: 0.2rem;
+}
+.ul-side-menu li{  
+  border-bottom: 1px solid #737373;
+}
+.ul-side-menu li a{
+  width: 100%;
+  display: block;
+  padding-left: 0.1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  color: #000000;
+  line-height: 20px;
+}
+.ul-side-menu li a i{
+  margin-right: 0.5rem;
+  font-size: 16px;
+  color: #000000;
+  padding: 0.1rem 0.2rem;
+}
+.ul-side-menu li:hover a i, .ul-side-menu li.active a i{
+  background-color: #fc550b;
+  color: #ffffff;
 }
 @media (max-width: 575px) {
   .div-contain-logo {
@@ -1023,6 +1112,9 @@ footer {
     background-image: url('../images/bg_search2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  .div-side-menu{
+    display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
