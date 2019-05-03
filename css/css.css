@@ -1134,6 +1134,9 @@ footer {
   .div-side-menu {
     display: block;
   }
+  .div-content{
+    padding-left: 260px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 }
