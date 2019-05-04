@@ -886,6 +886,91 @@ footer {
   padding-right: 20px;
   display: none;
 }
+.div-side-qr {
+  display: none;
+}
+.card-book-mix {
+  width: 100%;
+  background-image: url("../images/bg_card_book.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.contain-cover_book {
+  position: relative;
+  width: 100%;
+}
+.contain-cover_book img.shadow-cover-book {
+  width: 100%;
+  z-index: 50;
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.corner-book {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  z-index: 49;
+}
+.corner-book img{
+  width: 65%;
+}
+.contain-detail_book{
+  position: relative;
+  min-height: 13vh;
+  max-height: 13vh;
+  padding: 1rem;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+.p-title-card-book{
+  margin-bottom: 0.5rem;
+  color: #127740;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.p-detail-card-book{
+  line-height: 22px;
+  margin-bottom: 0.2rem;
+  color: #000000;
+}
+.p-date-card-book{
+  line-height: 18px;
+  margin-bottom: 0;
+  color: #000000;
+}
+.contain-btn-book{
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  width: 2.3rem;
+}
+.btn-add-book{
+  width: 2.3rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.div-pagination-book p{
+  margin-bottom: 0;
+}
+.div-pagination-book p .active-pagination{
+  color: #fe6e2f;
+}
+.btn-pagination{
+  border: none;
+  margin: 0;
+  color: #ffffff;
+  padding: 0.5rem;
+  padding-bottom: 0;
+}
+.btn-pagination.btn-pagination-left{
+  background-color: #fe6e2f;
+}
+.btn-pagination.btn-pagination-right{
+  background-color: #127740;
+}
 .card-side-menu,
 .card-side-menu .card-header {
   background-color: transparent;
@@ -933,6 +1018,9 @@ footer {
 .ul-side-menu li {
   border-bottom: 1px solid #737373;
 }
+.div-fix-top-content{
+  display: none;
+}
 .ul-side-menu li a {
   width: 100%;
   display: block;
@@ -962,9 +1050,9 @@ footer {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.p-side-qr{
+.p-side-qr {
   font-weight: 600;
-  font-family: 'PSL-Chamnarn', Tahoma, sans-serif;
+  font-family: "PSL-Chamnarn", Tahoma, sans-serif;
 }
 @media (max-width: 575px) {
   .div-contain-logo {
@@ -1055,6 +1143,13 @@ footer {
     padding-right: 1rem;
     padding-top: 1rem;
   }
+  .corner-book img{
+    width: 90%;
+  }
+  .contain-detail_book{
+    min-height: 19vh;
+    max-height: 19vh;
+  }
 }
 @media (min-width: 768px) {
   .div-contain-logo {
@@ -1114,6 +1209,9 @@ footer {
     padding-right: 1rem;
     padding-top: 1rem;
   }
+  .corner-book img{
+    width: 85%;
+  }
 }
 @media (max-width: 991px) {
   .div-before-lang {
@@ -1134,11 +1232,23 @@ footer {
   .div-side-menu {
     display: block;
   }
-  .div-content{
+  .div-side-qr {
+    display: block;
+  }
+  .div-content {
     padding-left: 260px;
+  }
+  .div-fix-top-content{
+    display: block;
+    position: absolute;
+    bottom: 101%;
+    right: 15px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .corner-book img{
+    width: 50%;
+  }
 }
 @media (max-width: 1199px) {
 }
