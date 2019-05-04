@@ -14,10 +14,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet" />
+  <link href="./css/font_family.css" rel="stylesheet">
+  <link href="./css/font_th.css" rel="stylesheet">
+  <!--font eng-->
+  <!--<link href="./css/font_en.css">-->
   <link id="font-id" href="./css/font.css" rel="stylesheet" />
   <link href="./css/css.css" rel="stylesheet" />
   <link href="./css/filter.css" rel="stylesheet" />
@@ -235,30 +235,407 @@
   <main>
     <section class="bg-e1e1e1 pb-5">
       <div class="container bg-ececec">
-        <div class="row hr-elib bg-ececec">
-          <div class="col-12 mb-3">
-            <img src="./images/mock/breadcrumb-lend.png" class="w-100 img-fluid" />
+        <div class="row bg-ececec">
+          <div id="breadcrumb" class="col-12 mb-3 d-none d-md-block">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-elib">
+                <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
+                <li class="breadcrumb-item"><a href="book.html">หนังสือ</a></li>
+                <li class="breadcrumb-item active">หนังสือมาใหม่</li>
+              </ol>
+            </nav>
           </div>
           <div class="col-12 mb-3">
-            <img src="./images/mock/search-lend.png" class="img-fluid w-100" />
+            <div id="block-search-book">
+              <div class="row">
+                <div class="col-12 col-lg-5 mb-2">
+                  <input class="form-control input-search2" placeholder="ชื่อหนังสือ" />
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="row">
+                    <div class="col-12 col-md-8 col-lg-8 mb-2">
+                      <div class="row">
+                        <div class="col-6">
+                          <select class="browser-default custom-select sl-search-type w-100">
+                            <option selected>ประเภท</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="browser-default custom-select sl-search-fac w-100">
+                            <option selected>สำนักพิมพ์</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <p class="mb-0 mt-1 text-center text-md-left">
+                            <a href="" class="link-search">Advanced Search</a> |
+                            <a href="" class="link-search">Browse Search</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 text-center text-lg-left mb-2">
+                      <button class="btn btn-search">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 mb-3">
-            <img src="./images/mock/text-lend.png" class="img-fluid w-100" />
+          <div class="col-12">
+            <div class="div-title-page">
+              <p class="text-title-page">หนังสือ<span>มาใหม่</span></p>
+              <p class="text-subtitle-page">New release</p>
+            </div>
           </div>
-          <div class="col-12 col-md-3 col-lg-3">
-            <img src="./images/mock/side-new-book.png" class="img-fluid w-100" />
-          </div>
-          <div class="col-12 col-md-9 col-lg-9">
-            <img src="./images/mock/book_detail.png" class="img-fluid w-100" />
+          <div class="col-12">
+            <div class="div-content">
+              <div class="div-pagination-book div-fix-top-content">
+                <p>ย้อนกลับ</p>
+                <div class="text-center">
+                  <a class="btn-back">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                </div>
+              </div>
+              <!--Start Side-->
+              <div class="side-menu-page">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="div-side-menu">
+                      <div class="accordion" id="accordion-sidemenu">
+                        <div class="card card-side-menu z-depth-0">
+                          <div class="card-header" id="header-sidemenu-1">
+                            <h5 class="mb-0">
+                              <button class="btn btn-block btn-link" type="button" data-toggle="collapse"
+                                data-target="#main-side-menu-1" aria-expanded="true" aria-controls="main-side-menu-1">
+                                <i class="fas fa-angle-down"></i>หนังสือ
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="main-side-menu-1" class="collapse show" aria-labelledby="header-sidemenu-1"
+                            data-parent="#accordion-sidemenu">
+                            <div class="card-body">
+                              <ul class="ul-side-menu">
+                                <li class="active">
+                                  <a href="#"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>วิทยาศาสตร์</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>สิ่งแวดล้อม</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-side-menu z-depth-0">
+                          <div class="card-header" id="header-sidemenu-2">
+                            <h5 class="mb-0">
+                              <button class="btn btn-block btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#main-side-menu-2" aria-expanded="false" aria-controls="main-side-menu-2">
+                                <i class="fas fa-angle-down"></i>แมกกาซีน
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="main-side-menu-2" class="collapse" aria-labelledby="header-sidemenu-2"
+                            data-parent="#accordion-sidemenu">
+                            <div class="card-body">
+                              <ul class="ul-side-menu">
+                                <li class="active">
+                                  <a href="#"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>วิทยาศาสตร์</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>สิ่งแวดล้อม</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-side-menu z-depth-0">
+                          <div class="card-header" id="header-sidemenu-3">
+                            <h5 class="mb-0">
+                              <button class="btn btn-block btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#main-side-menu-3" aria-expanded="false" aria-controls="main-side-menu-3">
+                                <i class="fas fa-angle-down"></i>มัลติมีเดีย
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="main-side-menu-3" class="collapse" aria-labelledby="header-sidemenu-3"
+                            data-parent="#accordion-sidemenu">
+                            <div class="card-body">
+                              <ul class="ul-side-menu">
+                                <li class="active">
+                                  <a href="#"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>วิทยาศาสตร์</a>
+                                </li>
+                                <li>
+                                  <a href="#"><i class="fas fa-angle-right"></i>สิ่งแวดล้อม</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-5">
+                    <div class="div-side-qr">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <p class="p-side-qr">Mobile Application</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <img src="./images/qr_side.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 mb-3">
+                          <img src="./images/qr_side.png" class="img-fluid">
+                        </div>
+                        <div class="col-12 mb-2">
+                          <img src="./images/apple-store.png" class="img-fluid w-100">
+                        </div>
+                        <div class="col-12 mb-2">
+                          <img src="./images/google-store.png" class="img-fluid w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Side-->
+              <!--Start Content-->
+              <div class="row justify-content-around">
+                <div class="col-12">
+                  <div class="block-book-detail">
+                    <div class="row hr-elib">
+                      <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card-book-detail wow fadeInUp">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 col-lg-8">
+                        <div class="div-detail-frist wow fadeInRight">
+                          <p class="p-detail-title">นโยบายพลังงาน อนุรักษ์พลังงานภาคขนส่ง</p>
+                          <p class="p-detail-subtitle">ENERGY IN TRANSPORT</p>
+                          <p class="p-detail-book">ชื่อหนังสือ : นโยบายพลังงาน อนุรักษ์พลังงานภาคขนส่ง</p>
+                          <p class="p-detail-book">ผู้แต่ง : กระทรวงพลังงาน</p>
+                          <p class="p-detail-book">สำนักพิม์ : </p>
+                          <p class="p-detail-book">เลขเรียกหนังสือ : <span class="black-text">000214587</span></p>
+                        </div>
+                        <div class="div-detail-second wow fadeInRight">
+                          <p class="p-detail-second">พลังงานมีบทบาทต่อการพัฒนาประเทศในทุกๆด้าน
+                            เพราะการดำเนินธุรกรรมทั้งทางเศรษฐกิจและสังคมจำเป็นต้องอาศัยพลังงานเป็นปัจจัยพื้นฐาน
+                            เศรษฐกิจไทยที่เจริญพัฒนาได้อย่างมั่นคงด้วยอัตราการเจริญเติบโตในอัตราเฉลี่ยร้อยละ 7 ต่อปี
+                            ตลอดช่วงปี พ.ศ. 2504-2539 ซึ่งเป็นช่วงของการพัฒนาประเทศ
+                            ตามแผนพัฒนาเศรษฐกิจและสังคมแห่งชาติฉบับที่ 1-7</p>
+                        </div>
+                        <button class="btn-detail-book btn-lend">
+                          ยืม
+                        </button>
+                        <button class="btn-detail-book btn-trial-read">
+                          ทดลองอ่าน
+                        </button>
+                        <button class="btn-detail-book btn-read-online">
+                          อ่านออนไลน์
+                        </button>
+                      </div>
+                      <div class="col-12 mt-3">
+                        <div class="div-social-btn">
+                          <button class="btn-social-detail-book">
+                            <img src="./images/btn-line.png" class="img-fluid">
+                          </button>
+                          <button class="btn-social-detail-book">
+                            <img src="./images/btn-twitter.png" class="img-fluid">
+                          </button>
+                          <button class="btn-social-detail-book">
+                            <img src="./images/btn-like.png" class="img-fluid">
+                          </button>
+                          <button class="btn-social-detail-book">
+                            <img src="./images/btn-ig.png" class="img-fluid">
+                          </button>
+                          <span class="text-social d-none d-md-block">One person like this.<br>Be the first of your
+                            friends.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="div-title-page">
+                    <p class="text-title-page">หนังสือ<span>ที่เกี่ยวข้อง</span></p>
+                    <p class="text-subtitle-page">Related Book</p>
+                  </div>
+                </div>
+                <div class="col-12 relatedbook-padding wow fadeIn">
+                  <div class="relatedbook owl-carousel owl-theme">
+
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card-book-mix">
+                        <a href="#">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                            <div class="corner-book">
+                              <img src="./images/corner_book.png">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="contain-detail_book">
+                          <a href="#">
+                            <p class="p-title-card-book related">นโยบายพลังงาน</p>
+                          </a>
+                          <p class="p-detail-card-book related">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
+                          <p class="p-date-card-book related">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
+                          <div class="contain-btn-book">
+                            <button class="btn-add-book">
+                              <img src="./images/btn-add-book.png" class="img-fluid">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <!--End Content-->
+            </div>
           </div>
         </div>
-        <div class="row hr-elib bg-ececec mt-3">
-          <div class="col-12 col-md-3 col-lg-3">
-            <img src="./images/mock/side-lend-bottom.png" class="img-fluid w-100" />
-          </div>
-          <div class="col-12 col-md-9 col-lg-9">
-            <img src="./images/mock/detail_book2.png" class="img-fluid w-100" />
-          </div>
+        <div class="row hr-elib">
         </div>
       </div>
     </section>
@@ -323,6 +700,26 @@
   new WOW().init();
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+  });
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 18,
+      nav: true,
+      dots: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 3,
+        },
+        1000: {
+          items: 4,
+        }
+      }
+    });
   });
 </script>
 

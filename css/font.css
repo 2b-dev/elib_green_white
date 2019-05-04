@@ -1,7 +1,6 @@
-.ul-nav .list-nav a{
+.ul-nav .list-nav a {
   font-size: 20px;
 }
-
 .text-address,
 .text-sub-footer-banner-list {
   font-size: 16px;
@@ -10,14 +9,14 @@
 .text-footer-banner-list span {
   font-size: 18px;
 }
-.title-search-eng{
+.title-search-eng {
   font-size: 16px;
 }
-
-.text-num-footer-banner-list, p {
+.text-num-footer-banner-list,
+p {
   font-size: 20px;
 }
-.text-exhibition{
+.text-exhibition {
   font-size: 26px;
 }
 .main-nav .list-main-nav .list-link-main-nav,
@@ -27,33 +26,69 @@
 .text-footer-banner-list {
   font-size: 22px;
 }
-.btn-search{
+.btn-search {
   font-size: 22px;
 }
 .title-search,
 .text-application {
   font-size: 28px;
 }
-.text-title-page{
+.text-title-page {
   font-size: 33px;
 }
-.text-subtitle-page{
+.text-subtitle-page {
   font-size: 18px;
 }
-.card-side-menu .card-header .btn, .ul-side-menu li a{
+.card-side-menu .card-header .btn,
+.ul-side-menu li a {
   font-size: 20px;
 }
-.p-side-qr{
+.p-side-qr {
   font-size: 18px;
 }
-.p-title-card-book{
+.p-title-card-book {
   font-size: 28px;
 }
-.p-detail-card-book{
+.p-detail-card-book {
   font-size: 22px;
 }
-.p-date-card-book{
+.p-date-card-book {
   font-size: 18px;
+}
+.p-detail-title {
+  font-size: 28px;
+}
+.p-detail-subtitle {
+  font-size: 24px;
+}
+.p-detail-book {
+  font-size: 22px;
+}
+.p-detail-second {
+  font-size: 20px;
+}
+.btn-detail-book{
+  font-size: 20px;
+}
+.p-title-card-book.related {
+  font-size: 24px;
+}
+.p-detail-card-book.related {
+  font-size: 18px;
+}
+.p-date-card-book.related {
+  font-size: 14px;
+}
+@media (max-width: 767px){
+  .p-title-card-book.related {
+    font-size: 28px;
+  }
+  .p-detail-card-book.related {
+    font-size: 22px;
+  }
+  .p-date-card-book.related {
+    font-size: 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .text-sub-footer-banner-list {

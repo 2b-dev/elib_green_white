@@ -811,6 +811,31 @@ footer {
   padding: 0;
   content: "";
 }
+.relatedbook.owl-carousel .owl-nav{
+  text-align: right;
+}
+.relatedbook.owl-carousel .owl-nav .owl-prev{
+  background-color: #f1602b;
+  border: none;
+  border-radius: 0;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 25px;
+  padding: 0.5rem!important;
+  padding-bottom: 0.1rem!important;
+  margin-right: 0!important;
+}
+.relatedbook.owl-carousel .owl-nav .owl-next{
+  background-color: #127740;
+  border: none;
+  border-radius: 0;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 25px;
+  padding: 0.5rem!important;
+  padding-bottom: 0.1rem!important;
+  margin-left: 0!important;
+}
 .footer-banner-list {
   position: absolute;
   bottom: 0;
@@ -839,6 +864,40 @@ footer {
   left: 8.5vh;
   margin-bottom: 0;
   color: #ffffff;
+}
+.block-book-detail{
+  background-image: url('../images/bg-block-book.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  padding: 1.5rem;
+}
+.btn-back{
+  background-color: #f1602b;
+  position: relative;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.2rem;
+}
+.btn-back i{
+  color: #ffffff;
+}
+.btn-back::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 7px;
+  height: 100%;
+  background-color: #127740;
+  left: 100%;
+  top: 0;
+}
+.btn-back:hover{
+  background-color: #127740;
+}
+.btn-back:hover::after{
+  background-color: #f1602b;
 }
 /**/
 .div-title-page {
@@ -889,11 +948,83 @@ footer {
 .div-side-qr {
   display: none;
 }
+.div-detail-frist{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #127740;
+}
+.div-detail-second{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.p-detail-title{
+  color: #127740;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 20px;
+  margin-bottom: 0.5rem;
+}
+.p-detail-subtitle{
+  color: #127740;
+  line-height: 18px;
+}
+.p-detail-book{
+  color: #127740;
+  line-height: 18px;
+  margin-bottom: 0.5rem;
+}
+.p-detail-second{
+  color: #127740;
+  line-height: 22px;
+}
 .card-book-mix {
   width: 100%;
   background-image: url("../images/bg_card_book.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.card-book-detail {
+  width: 100%;
+  background-image: url("../images/bg_card_book.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+}
+.btn-detail-book{
+  min-width: 100px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  margin-right: 0.3rem;
+}
+.btn-social-detail-book{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+.btn-detail-book:last-of-type{
+  margin-right: 0;
+}
+.text-social{
+  line-height: 15px;
+}
+.btn-detail-book.btn-lend{
+  background-image: url('../images/btn-detail-lend.png');
+}
+.btn-detail-book.btn-trial-read{
+  background-image: url('../images/btn-detail-trial-read.png');
+}
+.btn-detail-book.btn-read-online{
+  background-image: url('../images/btn-detail-read-online.png');
+}
+.div-social-btn{
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
 }
 .contain-cover_book {
   position: relative;
@@ -1087,7 +1218,7 @@ footer {
     font-size: 18px;
   }
   .footer-div {
-    border-right: none;
+    border-right: none!important;
   }
   .footer-div::before {
     content: "";
@@ -1150,6 +1281,23 @@ footer {
     min-height: 19vh;
     max-height: 19vh;
   }
+  .div-social-btn{
+    justify-content: center;
+    flex-direction: row;
+  }
+  .btn-social-detail-book{
+    width: 30%;
+  }
+  .btn-social-detail-book img {
+    width:100%;
+  }
+  .relatedbook-padding{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .relatedbook.owl-carousel .owl-nav{
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   .div-contain-logo {
@@ -1211,6 +1359,9 @@ footer {
   }
   .corner-book img{
     width: 85%;
+  }
+  .div-social-btn{
+    justify-content: center;
   }
 }
 @media (max-width: 991px) {

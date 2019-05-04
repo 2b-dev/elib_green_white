@@ -55,6 +55,30 @@
 .p-date-card-book{
   font-size: 16px;
 }
+.p-detail-title{
+  font-size: 26px;
+}
+.p-detail-subtitle{
+  font-size: 22px;
+}
+.p-detail-book{
+  font-size: 20px;
+}
+.p-detail-second{
+  font-size: 18px;
+}
+.btn-detail-book{
+  font-size: 18px;
+}
+.p-title-card-book.related {
+  font-size: 22px;
+}
+.p-detail-card-book.related {
+  font-size: 16px;
+}
+.p-date-card-book.related {
+  font-size: 12px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .text-sub-footer-banner-list {
     font-size: 16px;
