@@ -79,6 +79,7 @@ p {
 .p-date-card-book.related {
   font-size: 14px;
 }
+
 @media (max-width: 767px){
   .p-title-card-book.related {
     font-size: 28px;

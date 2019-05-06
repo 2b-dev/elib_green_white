@@ -82,11 +82,62 @@ footer {
   padding-right: 0.25rem;
   color: #ffffff;
 }
+.news-title{
+  color: #127740;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 0.3rem;
+}
+.news-sub{
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 0.3rem;
+}
+.news-date{
+  color: #f1602b;
+  font-size: 16px;
+  text-align: right;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+.map-container-section {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
 .side_left_nav {
   background-image: url("../images/side_left_nav.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-bottom: 0.15rem;
+}
+.btn-floating{
+  width: 50px;
+  height: 50px;
+  background-color: #127740;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.btn-floating i {
+  font-size: 1.25rem;
+  line-height: 50px;
+  color: #ffffff;
 }
 .side_right_nav {
   background-image: url("../images/side_right_nav.png");
@@ -825,6 +876,9 @@ footer {
   padding-bottom: 0.1rem!important;
   margin-right: 0!important;
 }
+.undecoration{
+  text-decoration: none!important;
+}
 .relatedbook.owl-carousel .owl-nav .owl-next{
   background-color: #127740;
   border: none;
@@ -1043,15 +1097,27 @@ footer {
   left: 0px;
   z-index: 49;
 }
+.corner-book.lend-corner-book{
+  left: 15px;
+}
 .corner-book img{
   width: 65%;
+}
+.corner-sendback{
+  position: absolute;
+  bottom: 90%;
+  right: 0;
+}
+.corner-sendback img{
+  width: 50px;
+  height: 50px;
 }
 .contain-detail_book{
   position: relative;
   min-height: 13vh;
   max-height: 13vh;
   padding: 1rem;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
   overflow: hidden;
 }
 .p-title-card-book{

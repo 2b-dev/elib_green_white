@@ -240,8 +240,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-elib">
                 <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
-                <li class="breadcrumb-item"><a href="book.html">หนังสือ</a></li>
-                <li class="breadcrumb-item active">หนังสือมาใหม่</li>
+                <li class="breadcrumb-item active">ยืม-คืน</li>
               </ol>
             </nav>
           </div>
@@ -289,23 +288,12 @@
           </div>
           <div class="col-12">
             <div class="div-title-page">
-              <p class="text-title-page">หนังสือ<span>มาใหม่</span></p>
-              <p class="text-subtitle-page">New release</p>
+              <p class="text-title-page">ยืม-<span>คืน</span></p>
+              <p class="text-subtitle-page">Borrow & Send back</p>
             </div>
           </div>
           <div class="col-12">
             <div class="div-content">
-              <div class="div-pagination-book div-fix-top-content">
-                <p>หน้าที่ <span class="active-pagination">1</span>/10</p>
-                <div class="text-center">
-                  <button class="btn-pagination btn-pagination-left">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="btn-pagination btn-pagination-right">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                </div>
-              </div>
               <!--Start Side-->
               <div class="side-menu-page">
                 <div class="row">
@@ -317,7 +305,7 @@
                             <h5 class="mb-0">
                               <button class="btn btn-block btn-link" type="button" data-toggle="collapse"
                                 data-target="#main-side-menu-1" aria-expanded="true" aria-controls="main-side-menu-1">
-                                <i class="fas fa-angle-down"></i>หนังสือ
+                                <i class="fas fa-angle-down"></i>ยืม-คืน
                               </button>
                             </h5>
                           </div>
@@ -326,13 +314,7 @@
                             <div class="card-body">
                               <ul class="ul-side-menu">
                                 <li class="active">
-                                  <a href="book.html"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
-                                </li>
-                                <li>
-                                  <a href="#"><i class="fas fa-angle-right"></i>วิทยาศาสตร์</a>
-                                </li>
-                                <li>
-                                  <a href="#"><i class="fas fa-angle-right"></i>สิ่งแวดล้อม</a>
+                                  <a href="lend_list.html"><i class="fas fa-angle-right"></i>รายการยืม</a>
                                 </li>
                               </ul>
                             </div>
@@ -343,7 +325,7 @@
                             <h5 class="mb-0">
                               <button class="btn btn-block btn-link collapsed" type="button" data-toggle="collapse"
                                 data-target="#main-side-menu-2" aria-expanded="false" aria-controls="main-side-menu-2">
-                                <i class="fas fa-angle-down"></i>แมกกาซีน
+                                <i class="fas fa-angle-down"></i>วิธีการใช้งาน
                               </button>
                             </h5>
                           </div>
@@ -352,27 +334,7 @@
                             <div class="card-body">
                               <ul class="ul-side-menu">
                                 <li class="">
-                                  <a href="magazine.html"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card card-side-menu z-depth-0">
-                          <div class="card-header" id="header-sidemenu-3">
-                            <h5 class="mb-0">
-                              <button class="btn btn-block btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#main-side-menu-3" aria-expanded="false" aria-controls="main-side-menu-3">
-                                <i class="fas fa-angle-down"></i>มัลติมีเดีย
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="main-side-menu-3" class="collapse" aria-labelledby="header-sidemenu-3"
-                            data-parent="#accordion-sidemenu">
-                            <div class="card-body">
-                              <ul class="ul-side-menu">
-                                <li class="">
-                                  <a href="multimedia.html"><i class="fas fa-angle-right"></i>ทุกหมวด</a>
+                                  <a href="howtolend.html"><i class="fas fa-angle-right"></i>วิธีการใช้งาน</a>
                                 </li>
                               </ul>
                             </div>
@@ -407,171 +369,95 @@
               <!--End Side-->
               <!--Start Content-->
               <div class="row justify-content-around">
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
+                <div class="col-12">
+                  <div class="block-book-detail">
+                    <div class="row hr-elib">
+                      <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card-book-detail wow fadeInUp">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_book_card.png" class="img-fluid">
+                          </div>
+                          <div class="corner-book lend-corner-book">
+                            <img src="./images/corner_book.png">
+                          </div>
+                          <div class="corner-sendback">
+                            <img src="./images/icon-sendback.png">
+                          </div>
                         </div>
                       </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
+                      <div class="col-12 col-md-8 col-lg-8">
+                        <div class="div-detail-frist wow fadeInRight">
+                          <p class="p-detail-title">นโยบายพลังงาน อนุรักษ์พลังงานภาคขนส่ง</p>
+                          <p class="p-detail-subtitle">ENERGY IN TRANSPORT</p>
+                          <p class="p-detail-book">ชื่อหนังสือ : นโยบายพลังงาน อนุรักษ์พลังงานภาคขนส่ง</p>
+                          <p class="p-detail-book">ผู้แต่ง : กระทรวงพลังงาน</p>
+                          <p class="p-detail-book">สำนักพิม์ : </p>
+                          <p class="p-detail-book">เลขเรียกหนังสือ : <span class="black-text">000214587</span></p>
+                        </div>
+                        <div class="div-detail-second wow fadeInRight">
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">ชื่อหนังสือ :</span>
+                            นโยบายพลังงาน อนุรักษ์พลังงานภาคขนส่ง</p>
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">วันที่ยืม :</span> 17-03-62
+                          </p>
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">กำหนดคืน :</span> <span
+                              class="c-f05a23">24-03-62</span>
+                          </p>
+                        </div>
+                        <button class="btn-detail-book btn-read-online float-right">
+                          คืนหนังสือ
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
+                <div class="col-12">
+                  <div class="block-book-detail">
+                    <div class="row hr-elib">
+                      <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card-book-detail wow fadeInUp">
+                          <div class="contain-cover_book">
+                            <img src="./images/cover_magazine.png" class="img-fluid">
+                          </div>
+                          <div class="corner-book lend-corner-book">
+                            <img src="./images/corner_book.png">
+                          </div>
+                          <div class="corner-sendback">
+                            <img src="./images/icon-sendback.png">
+                          </div>
                         </div>
                       </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
+                      <div class="col-12 col-md-8 col-lg-8">
+                        <div class="div-detail-frist wow fadeInRight">
+                          <p class="p-detail-title">GARAGE</p>
+                          <p class="p-detail-subtitle"></p>
+                          <p class="p-detail-book">ชื่อหนังสือ : GARAGE</p>
+                          <p class="p-detail-book">ผู้แต่ง : </p>
+                          <p class="p-detail-book">สำนักพิม์ : </p>
+                          <p class="p-detail-book">เลขเรียกหนังสือ : <span class="black-text">000214587</span></p>
+                        </div>
+                        <div class="div-detail-second wow fadeInRight">
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">ชื่อหนังสือ :</span>
+                            GARAGE</p>
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">วันที่ยืม :</span> 17-03-62
+                          </p>
+                          <p class="p-detail-subtitle undecoration"><span class="black-text">กำหนดคืน :</span> <span
+                              class="c-f05a23">24-03-62</span>
+                          </p>
+                        </div>
+                        <button class="btn-detail-book btn-read-online float-right">
+                          คืนหนังสือ
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
-                        </div>
-                      </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
-                        </div>
-                      </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
-                        </div>
-                      </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-10 col-md-5 col-lg-4 mb-3">
-                  <div class="card-book-mix wow fadeInUp">
-                    <a href="book_detail.html">
-                      <div class="contain-cover_book">
-                        <img src="./images/cover_book_card.png" class="img-fluid shadow-cover-book">
-                        <div class="corner-book">
-                          <img src="./images/corner_book.png">
-                        </div>
-                      </div>
-                    </a>
-                    <div class="contain-detail_book">
-                      <a href="book_detail.html">
-                        <p class="p-title-card-book">นโยบายพลังงาน</p>
-                      </a>
-                      <p class="p-detail-card-book">อนุรักษ์พลังงาน ภาคขนส่ง ENERGY IN TRANSPORT</p>
-                      <p class="p-date-card-book">ฉบับที่ 70 ตุลาคม - ธันวาคม 2548</p>
-                      <div class="contain-btn-book">
-                        <button class="btn-add-book">
-                          <img src="./images/btn-add-book.png" class="img-fluid">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <!--End Content-->
             </div>
           </div>
         </div>
         <div class="row hr-elib">
-        </div>
-        <div class="row">
-          <div class="col-12 text-center text-md-right">
-            <div class="div-pagination-book">
-              <p>หน้าที่ <span class="active-pagination">1</span>/10</p>
-              <div class="text-center;">
-                <button class="btn-pagination btn-pagination-left">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="btn-pagination btn-pagination-right">
-                  <i class="fas fa-chevron-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
